@@ -32,4 +32,4 @@ In the `predict and plot` folder:
   - The matrix `bif_chua_pre5.mat` contains the data for the reconstructed bifurcation diagram of Chua circuit.
   - The matrix `bif_chua_processed_data.mat` contains the data for the true bifurcation diagram of Chua circuit.
   - `traindata.mat`: The training data matrix.
-  - `opt_attractor_2_20240716T172246_814.mat` and `min_rng_set.mat`: Optimized data matrices.
+  - `opt_attractor_chua.mat` and `min_rng_set.mat`: Optimized data matrices.
