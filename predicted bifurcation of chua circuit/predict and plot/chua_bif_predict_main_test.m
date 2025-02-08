@@ -6,7 +6,7 @@ load('traindata.mat');
 dt=0.001;      % 解ode方程时的时间步长
 mod_num=20;    % 数据采样间隔 
 drive_num=50;  % 驱动数据时间步长
-load opt_attractor_2_20240716T172246_814.mat 
+load opt_attractor_chua.mat 
 load min_rng_set.mat
 
 %%  贝叶斯优化结果
@@ -96,7 +96,7 @@ for k=1:n_r
         u(1:3,1) = y;
         u(4,1)=r(k);
     end
-    data_chua=Y(1,end-8000:end);      
+    data_chua=Y(1,end-8000+1:end);      
     %% 找第一个变量x的局部最大值
     for t=3:length(data_chua(1,:))  % 从第一个变量x的第三个点开始找局部最大值
         if data_chua(1,t-1)>data_chua(1,t-2)&&data_chua(1,t-1)>data_chua(1,t)
